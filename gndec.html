@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Nanak Dev Engineering College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="counter.js"></script>
+<script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
+    <style>
+        body { background-color: #f8f9fa; }
+        .hero-section {
+           background-color:  #f5f5f5;
+            color: black;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero-section h1 { font-size: 40px; font-weight: bold; }
+        .section { padding: 60px 0; }
+        .section-title { text-align: center; color: #FF8C00; margin-bottom: 40px; }
+        .card:hover { transform: scale(1.05); transition: 0.3s; }
+    </style>
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Guru Nanak Dev Engineering College</h1>
+        <p>Excellence in Technical Education Since 1956</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container section">
+        <h2 class="section-title">About GNDEC</h2>
+        <p style="text-align: justify;">Guru Nanak Dev Engineering College (GNDEC), established in 1956, is a premier engineering institution in Northern India. It is ISO certified, NBA accredited, and holds autonomous status from UGC, ensuring high academic standards. GNDEC is committed to technical education, research, and innovation, offering a diverse range of undergraduate, postgraduate, and doctoral programs. The college collaborates with leading industries and international universities, fostering global exposure and practical learning. With state-of-the-art laboratories, modern infrastructure, and experienced faculty, GNDEC empowers students with the skills needed to excel in engineering, entrepreneurship, and leadership, making a significant impact on society and industry.</p>
+        <img src="img/nankana_sahib_education_trust_guru nanak dev engineering college.jpg" class="img-fluid rounded d-block mx-auto" alt="About GNDEC">
+    </div>
+
+    <div class="container section">
+        <h2 class="section-title">Our Courses</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h5>Computer Science Engineering</h5>
+                <p>Learn cutting-edge software development, AI, and data science.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Mechanical Engineering</h5>
+                <p>Explore automation, robotics, and advanced manufacturing.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Civil Engineering</h5>
+                <p>Build the future with sustainable and smart infrastructure.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Electronics and Communication Engineering</h5>
+                <p>Learn Electronics and Communication Engineering to innovate, connect, and transform technology.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Electrical Engineering</h5>
+                <p>Learn Electrical Engineering to power innovation, design systems, and transform industries.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Information Technology</h5>
+                <p>Learn Information Technology to innovate, secure data, and shape digital futures.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section">
+        <h2 class="section-title">Campus Facilities</h2>
+        <p>GNDEC offers world-class facilities, including a modern library, research labs, innovation centers, and a dedicated sports complex. Our campus is equipped with high-tech classrooms and state-of-the-art infrastructure to foster academic and extracurricular excellence.</p>
+        <img src="img/library.jpg" class="img-fluid rounded d-block mx-auto" alt="Library">
+    </div>
+
+    <div class="container section text-center">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Email: contact@gndec.ac.in | Phone: +91 98765 43210</p>
+        <p>Address: Gill Park, Ludhiana, Punjab, India</p>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
