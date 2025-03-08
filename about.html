@@ -100,6 +100,8 @@
 
 <body>
 
+    <!-- Include Header -->
+    <div id="header-container"></div>
     <script>
         fetch('header.html')
             .then(response => response.text())
@@ -107,9 +109,6 @@
                 document.getElementById('header-container').innerHTML = data;
             });
     </script>
-
-    <!-- Include Header -->
-    <div id="header-container"></div>
 
     <!-- Hero Section -->
     <div class="hero-section">
@@ -222,6 +221,16 @@
                 <h2 style="color: #FF8C00;">Our Mission</h2>
                 <p style="text-align: justify;">Our institution is dedicated to the mission of Education for All, ensuring that quality education is accessible to every individual, regardless of background. We actively promote Fostering Innovation, encouraging students to think critically, explore new ideas, and develop groundbreaking technologies that shape the future. Through our commitment to Holistic Development, we provide students with opportunities for leadership growth and skill enhancement, preparing them to excel in all aspects of life. Additionally, we emphasize Uplifting Society by nurturing technically competent professionals who contribute to nation-building and drive positive change. Our strong focus on Industry Collaboration strengthens partnerships with industries and universities, ensuring that students are equipped with real-world knowledge and practical experience to thrive in their careers.</p>
     </div>
+
+     <!-- Include Footer -->
+     <div id="footer-container"></div>
+     <script>
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer-container').innerHTML = data;
+             });
+     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
